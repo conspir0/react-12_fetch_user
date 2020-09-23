@@ -164,9 +164,9 @@ ul {
   margin: 20px auto 10px;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  transform: rotate(-360deg);
   transition: .25s ease;
 }
 
@@ -174,7 +174,6 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-  ;
   transform: rotate(360deg);
   transition: .25s ease;
 }

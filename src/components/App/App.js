@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-
 import ButtonGenerateUser from '../ButtonGenerateUser/ButtonGenerateUser'
 import UsersList from '../UsersList/UsersList';
 
-
-const API = 'https://randomuser.me/api/?results=1';
 
 class App extends Component {
   state = {
@@ -13,13 +10,15 @@ class App extends Component {
   }
 
   generateUsersList = (users) => {
-    this.setState({
-      users: users.results
-    })
+    this.setState(prevState => ({
+      users: [...users.results, ...prevState.users]
+    }))
   }
 
   handleDataFetch = () => {
-    fetch(API)
+    const { api } = this.props;
+
+    fetch(api)
       .then(response => {
         if (response.status === 200) {
           return response;

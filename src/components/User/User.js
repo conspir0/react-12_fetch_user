@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const User = ({ user }) => {
   return (
     <div className="result-box">

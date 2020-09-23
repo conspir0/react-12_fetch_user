@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
 
+const API = 'https://randomuser.me/api/?results=1';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App api={API} />
   </React.StrictMode>,
   document.getElementById('root')
 );
