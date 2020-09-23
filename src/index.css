@@ -35,7 +35,7 @@ ul {
 .result-container {
   max-width: 600px;
   min-height: 85px;
-  max-height: 300px;
+  /* max-height: 300px; */
   padding: 30px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -152,8 +152,31 @@ ul {
 
 .result-box p {
   text-transform: none;
+  text-align: center;
   font-weight: 300;
-  /* padding-bottom: 5px; */
+  padding: 15px 0 5px;
+}
+
+.result-box img.avatar {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+;
+  transition: .25s ease;
+}
+
+.result-box img.avatar:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  ;
+  transform: rotate(360deg);
+  transition: .25s ease;
 }
 
 .result-box__selected {
